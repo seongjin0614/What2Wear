@@ -9,6 +9,10 @@ export default function Home() {
     setCity(e.target.value);
   };
 
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDate(e.target.value);
+  };
+
 
   return (
     <div>
@@ -18,8 +22,18 @@ export default function Home() {
       </div>
 
       <div className='infoInput'>
-        <input type="text" placeholder="지역" />
-        <input type="date" placeholder="날짜" />
+        <input
+          type="text"
+          placeholder="지역"
+          value={city}
+          onChange={handleCityChange}
+        />
+        <input
+          type="date"
+          placeholder="날짜"
+          value={date}
+          onChange={handleDateChange}
+        />
         <button>추천</button>
       </div>
     </div>
