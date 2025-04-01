@@ -1,18 +1,28 @@
+import './SideBar.css';
+
 import { Link } from 'react-router-dom';
+
+const MenuItems = [
+  { path: '/', label: '홈' },
+  { path: '/search', label: '검색' },
+  { path: '/wtw', label: '왓투웨어' },
+  { path: '/mycloset', label: '나의옷장' },
+  { path: '/myrecord', label: '나의기록' },
+]
 
 export default function SideBar() {
   return (
     <nav className="sideBar">
       <div className="sideBar-header">
-        <h1>서비스의 이름이 들어갈 자리!</h1>
+        <h1>서비스 이름!! 미정!</h1>
       </div>
 
       <ul className='Menu'>
-        <li><Link to='/'>홈</Link></li>
-        <li><Link to='/search'>검색</Link></li>
-        <li><Link to='/wtw'>왓투웨어</Link></li>
-        <li><Link to='/mycloset'>나의옷장</Link></li>
-        <li><Link to='/myrecord'>나의기록</Link></li>
+        {MenuItems.map(({ path, label }) => (
+          <li key={path}>
+            <Link to={path}>{label}</Link>
+          </li>
+        ))}
       </ul>
 
       <ul className='userMenu'>

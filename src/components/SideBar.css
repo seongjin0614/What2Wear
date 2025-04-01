@@ -1,0 +1,39 @@
+.sideBar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.sideBar-header {
+  margin-bottom: 2rem;
+}
+
+.Menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.Menu li {
+  margin: 1rem 0;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.userMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.userMenu li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
