@@ -8,6 +8,7 @@ const MenuItems = [
   { path: '/wtw', label: '왓투웨어' },
   { path: '/mycloset', label: '나의옷장' },
   { path: '/myrecord', label: '나의기록' },
+  { path: '/guestbook', label: "방명록" }
 ]
 
 export default function SideBar() {
