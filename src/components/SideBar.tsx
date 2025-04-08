@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 //fontAwesome 아이콘
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const MenuItems = [
   { path: '/', label: '홈', icon: faHouse },
-  { path: '/search', label: '검색' },
+  { path: '/search', label: '검색', icon: faMagnifyingGlass },
   { path: '/wtw', label: '왓투웨어' },
   { path: '/mycloset', label: '나의옷장' },
   { path: '/myrecord', label: '나의기록' },
