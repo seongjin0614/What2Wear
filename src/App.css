@@ -4,6 +4,7 @@
 }
 
 .main-content {
-  flex: 1;
+  margin-left: 9.5vw;
+  min-height: 100vh;
   padding: 20px;
 }
